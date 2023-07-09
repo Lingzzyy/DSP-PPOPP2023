@@ -77,4 +77,3 @@ if __name__ == '__main__':
   graph = dataset[0]
   print(graph)
   print(graph.ndata)
-  #dataset = DglNodePropPredDataset(name='ogbn-products', root='/data/dgl/')

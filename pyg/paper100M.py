@@ -32,7 +32,7 @@ class Paper100M(InMemoryDataset):
     print(dataset)
     graph, labels = dataset[0]
     print(labels, labels.shape)
-    exit(0)
+    exit(0) # why there is a exit ? 
     edge_index = torch_geometric.utils.to_undirected(dataset[0].edge_index)
     x = dataset[0].x
     y = dataset[0].y
@@ -48,7 +48,7 @@ class Paper100M(InMemoryDataset):
     torch.save(self.collate([data]), self.processed_paths[0])
 
 if __name__ == '__main__':
-  dataset = Paper100M('/data/pyg/Paper100M')
-  print(dataset)
+  # dataset = Paper100M('/data/pyg/Paper100M')
+  # print(dataset)
   root = "/data/pyg"
   dataset = PygNodePropPredDataset('ogbn-products', root)

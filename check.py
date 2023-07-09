@@ -42,19 +42,4 @@ if __name__ == '__main__':
         line = ' '.join(new_graph[id]) + '\n'
       f.write(line)
 
-  # new_graph = {}
-  # new_graph[0] = []
-  # new_graph[0].append(str(1))
-  # new_graph[0].append(str(2))
-  # new_graph[1] = []
-  # new_graph[1].append(str(2))
-  # new_graph[1].append(str(3))
-  # new_graph[1].append(str(4))
-  # new_graph[1].append(str(5))
-  # new_path = '/data/snap/com-friendster.ungraph.compact.txt'
 
-  # with open(new_path, 'w') as f:
-  #   for i in range(2):
-  #     line = ' '.join(new_graph[i]) + '\n'
-  #     print(line)
-  #     f.write(line)

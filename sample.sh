@@ -18,23 +18,23 @@ for dataset in "product" "paper" "fs"; do
   done
 done
 
-conda activate quiver
-echo pyg_epoch_time
-mkdir -p logs/pyg/sample
-for dataset in "product" "paper" "fs"; do
-  for rank in 1 2 4 8; do
-    bash pyg/run.sh $dataset $rank 1 >& logs/pyg/sample/${dataset}_${rank}gpus.txt
-  done
-done
+# conda activate quiver
+# echo pyg_epoch_time
+# mkdir -p logs/pyg/sample
+# for dataset in "product" "paper" "fs"; do
+#   for rank in 1 2 4 8; do
+#     bash pyg/run.sh $dataset $rank 1 >& logs/pyg/sample/${dataset}_${rank}gpus.txt
+#   done
+# done
 
-conda activate quiver
-echo quiver_epoch_time
-mkdir -p logs/quiver/sample
-for dataset in "product" "paper" "fs"; do
-  for rank in 1 2 4 8; do
-    bash quiver/run.sh $dataset $rank 1 >&  logs/quiver/sample/${dataset}_${rank}gpus.txt
-  done
-done
+# conda activate quiver
+# echo quiver_epoch_time
+# mkdir -p logs/quiver/sample
+# for dataset in "product" "paper" "fs"; do
+#   for rank in 1 2 4 8; do
+#     bash quiver/run.sh $dataset $rank 1 >&  logs/quiver/sample/${dataset}_${rank}gpus.txt
+#   done
+# done
 
 echo dsp_epoch_time
 conda activate dsp
