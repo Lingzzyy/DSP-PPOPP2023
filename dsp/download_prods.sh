@@ -1,5 +1,5 @@
 name=ogb-product
-for n_gpu in 1 2 4 8
+for n_gpu in 1 2
 do
   outdir=/data/dsp
   mkdir -p $outdir
