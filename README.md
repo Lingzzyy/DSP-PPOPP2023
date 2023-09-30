@@ -1,3 +1,4 @@
 # DSP-PPOPP2023
 
-I am try to reproduce DSP paper. 
+Download from the paper's AE link.
+I am trying to reproduce the DSP paper. 
